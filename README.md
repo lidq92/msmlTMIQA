@@ -12,14 +12,21 @@ Download the ResNet-50-model.caffemodel from https://github.com/KaimingHe/deep-r
 It's about 100MB which is too large to upload to this repo.
 If you have difficulty, you can also download the `ResNet-50-model.caffemodel` in [my sharing on BaiduNetDisk](https://pan.baidu.com/s/1T32sYjrQA04kl1auArirxw) with password `u8sd`.
 
-## Note for training
-All we need to train is a PLSR model, where the training function is plsregress.m in [MATLAB](https://www.mathworks.com/products/matlab.html). The features are extracted from the DCNN models pre-trained on the image classification task.
+## Feature Extraction
+The features are extracted from the DCNN models pre-trained on the image classification task.
 
-Note: Remember to change the value of "im_dir" and "im_lists" in data info.
+Remember to change the value of "im_dir" and "im_lists" in data info！
+
+Run `ExtractFeatures.m` to get the features. For features of images from the ESPL-LIVE HDR dataset, you can also download from [my sharing on BaiduNetDisk](https://pan.baidu.com/s/1lgGRTNEG_JwL_uHm7mpFzg) with password `3aj0`.
+
+## Quality Prediction by PLSR
+All we need to train is a PLSR model, where the training function is plsregress.m in [MATLAB](https://www.mathworks.com/products/matlab.html). 
+
+Run `QualityPrediction.m` to conduct the experiments on ESPL-LIVE HDR.
 
 ## Citation
 
-Please cite our papers if it helps your research:
+Please cite our paper if it helps your research:
 
 <pre><code>@inproceedings{he2018quality,
   title={Quality Assessment for Tone-Mapped HDR Images Using Multi-Scale and Multi-Layer Information},
