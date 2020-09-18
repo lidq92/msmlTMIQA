@@ -5,6 +5,7 @@
 Code for the following paper:
 
 - Qin He, Dingquan, Tingting Jiang, and Ming Jiang. "[Quality Assessment for Tone-Mapped HDR Images Using Multi-Scale and Multi-Layer Information](https://www.researchgate.net/publication/328418186_Quality_Assessment_for_Tone-Mapped_HDR_Images_Using_Multi-Scale_and_Multi-Layer_Information)." ICMEw, 2018.
+
 ## Requirement
 Framework: [Caffe](https://github.com/BVLC/caffe/) 1.0 (with CUDA 8.0) + [MATLAB](https://www.mathworks.com/products/matlab.html) 2016b Interface
 
